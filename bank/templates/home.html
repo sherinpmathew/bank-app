@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> welcome to homepage</h1>
+<a href="{%url 'balance' %}">Balance Enquiry</a>
+<a href="{%url 'transaction'%}">fund transfer</a>
+<a href="{%url 'payhistory' %}">payment history</a>
+<a href="">logout</a>
+</body>
+<div>
+    {% if balance %}
+    <h2>{{balance}}</h2>
+    {% endif %}
+</div>
+</html>
